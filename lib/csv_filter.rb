@@ -3,6 +3,6 @@
 class CsvFilter
   # @param file_path the full path to a file
   def initialize file_path
-
+    @file = File.open(file_path, 'r')
   end
 end
