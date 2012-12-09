@@ -1,6 +1,6 @@
 = csv_filter
 
-Description goes here.
+Filters CSV or TSV files (default) by column names and optionally by a match on any field in rows.
 
 == Contributing to csv_filter
  
