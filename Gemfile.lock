@@ -12,6 +12,7 @@ GEM
     rake (10.0.2)
     rdoc (3.12)
       json (~> 1.4)
+    redcarpet (2.2.2)
     rspec (2.8.0)
       rspec-core (~> 2.8.0)
       rspec-expectations (~> 2.8.0)
@@ -28,5 +29,6 @@ PLATFORMS
 DEPENDENCIES
   jeweler (~> 1.8.4)
   rdoc (~> 3.12)
+  redcarpet (~> 2.2.2)
   rspec (~> 2.8.0)
   yard (~> 0.7)
