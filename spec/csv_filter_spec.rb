@@ -1,7 +1,10 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe "CsvFilter" do
-  it "should create a new object from a file"
+  it "should create a new object from a file" do
+    puts CsvFilter.new(File.expand_path(File.dirname(__FILE__))).should_not be_nil
+  end
+
   it "should grab just the columns specified"
   it "should return just the columns specified"
   it "should send output to stndout"
