@@ -7,7 +7,7 @@ describe "CsvFilter" do
 
   it "should grab just the columns specified" do
     columns = @tsv.filter('value', 'url')
-    (columns.gets =~ 'value').should_not be_true
+    (columns.gets =~ 'value').should be_true
   end
 
   it "should grep for a string in rows"
