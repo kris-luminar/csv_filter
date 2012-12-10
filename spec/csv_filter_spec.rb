@@ -5,7 +5,11 @@ describe "CsvFilter" do
     @tsv = CsvFilter.new(File.expand_path(File.dirname(__FILE__) + '/sample.tsv'))
   end
 
-  it "should grab just the columns specified"
+  it "should grab just the columns specified" do
+    columns = @tsv.filter('value', 'url')
+    (columns.gets =~ 'value').should_not be_true
+  end
+
   it "should grep for a string in rows"
   describe "console output"
     it "should send output to stndout"
