@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "csv_filter"
   gem.homepage = "http://github.com/kris-luminar/csv_filter"
   gem.license = "MIT"
-  gem.summary = %Q{filters csv/tsv files by column and (optionally) row}
-  gem.description = %Q{Filters CSV or TSV files (default) by column names and optionally by a match on any field in rows.}
+  gem.summary = %Q{filters csv/tsv files by column name}
+  gem.description = %Q{Filters CSV or TSV files (default) by column names}
   gem.email = "kris.luminar@gmail.com"
   gem.authors = ["Kris Luminar"]
   # dependencies defined in Gemfile

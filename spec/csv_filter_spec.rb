@@ -41,16 +41,10 @@ describe "CsvFilter" do
     register['url'].should eq 2
   end
 
-  it "should return a warning if all args not in header line" #exit code and puts warning rather than raising an exception
+  #exit code and puts warning rather than raising an exception
+  it "should return a warning if all args not in header line"
 
-  it "should grep for a string in rows"
   describe "console output"
     it "should send output to stndout"
     it "should return just the columns specified"
-  describe "to_file"
-    it "should create the named file"
-    it "should send success message to stdout"
-    it "should not send the file contents to stdout"
-    describe "file contents"
-      it "should include just the columns specified"
 end
