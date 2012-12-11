@@ -36,7 +36,7 @@ class CsvFilter
       #TODO: Decide wther to allow user to specify if header row exists. If so, this step will be conditional. Else, add proviso to the README that csv file must include a header line.
       next if i == 0 # skip header row
       row = {}
-      line.split(@separator).each_with_index do |value, j|
+      line.chomp.split(@separator).each_with_index do |value, j|
         if filtered_column_positions(columns).include? j
           row[@header[j]] = value
         end
@@ -50,7 +50,7 @@ class CsvFilter
     lines = filter(columns)
     output = []
     lines.each_with_index do |line, i|
-      row = "#{i}. "
+      row = "#{i}.".ljust(6)
       line.each do |k,v|
         row << "#{v}\t"
       end
