@@ -41,7 +41,7 @@ describe "CsvFilter" do
     register['url'].should eq 2
   end
 
-  it "should return a warning if all args not in header line" #exit code and puts warning rather than exception
+  it "should return a warning if all args not in header line" #exit code and puts warning rather than raising an exception
 
   it "should grep for a string in rows"
   describe "console output"

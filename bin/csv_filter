@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/Users/krisluminar/.rbenv/shims/ruby
 
 require 'csv_filter'
 
@@ -9,3 +9,4 @@ puts "available fields are: #{cf.fields}"
 puts "enter field names to filter"
 fields = gets.chomp
 cf.print_filter(fields.split(' '))
+puts "help"

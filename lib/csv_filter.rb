@@ -2,6 +2,8 @@
 class CsvFilter
   # @param file_path the full path to a file
   def initialize file_path, separator = "\t"
+    STDOUT.flush
+    puts "point 1"
     @file = File.open(file_path, 'r')
     @separator = separator
     @num_columns = count_columns
@@ -28,11 +30,12 @@ class CsvFilter
   end
 
   def filter(*columns)
-    # columns = [*columns] #columns should accept either an array of strings or a variable number of strings
+    puts "point 3"
+    # columns = [*columns].flatten #columns should accept either an array of strings or a variable number of strings
     raise ArgumentError unless (columns.respond_to?(:size) and columns.size < @num_columns)
     output = []
     @file.each_with_index do |line, i|
-      #TODO: Decide whether to allow user to specify if header row exists. If so, this step will be conditional. Else, add proviso to the README that csv file must include a header line.
+      #TODO: Decide wther to allow user to specify if header row exists. If so, this step will be conditional. Else, add proviso to the README that csv file must include a header line.
       next if i == 0 # skip header row
       row = {}
       line.split(@separator).each_with_index do |value, j|
@@ -43,6 +46,22 @@ class CsvFilter
       end
     end
     output
+  end
+
+  def print_filter(columns)
+    STDOUT.flush
+    puts "point 2"
+    STDOUT.flush
+    lines = filter(columns)
+    output = []
+    lines.each_with_index do |line, i|
+      row = "#{i}. "
+      line.each do |k,v|
+        row << "#{v}\t"
+      end
+      output << row
+    end
+    print output.join("\n")
   end
 
   def count_columns
