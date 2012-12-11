@@ -1,4 +1,4 @@
-#!/Users/krisluminar/.rbenv/shims/ruby
+#!/usr/bin/env ruby
 
 require 'csv_filter'
 
@@ -7,6 +7,5 @@ cf = CsvFilter.new(file_path)
 
 puts "available fields are: #{cf.fields}"
 puts "enter field names to filter"
-fields = gets.chomp
-cf.print_filter(fields.split(' '))
-puts "help"
+fields = gets.chomp.split(/\s/)
+cf.print_filter(fields)
