@@ -9,3 +9,5 @@ puts "available fields are: #{cf.fields}"
 puts "enter field names to filter"
 fields = gets.chomp.split(/\s/)
 cf.print_filter(fields)
+
+exit 0
