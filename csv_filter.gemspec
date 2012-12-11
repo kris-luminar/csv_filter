@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "csv_filter"
-  s.version = "0.2.1"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kris Luminar"]
   s.date = "2012-12-11"
-  s.description = "Filters CSV or TSV files (default) by column names and optionally by a match on any field in rows."
+  s.description = "Filters CSV or TSV files (default) by column names"
   s.email = "kris.luminar@gmail.com"
   s.executables = ["csv_filter"]
   s.extra_rdoc_files = [
@@ -40,7 +40,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.23"
-  s.summary = "filters csv/tsv files by column and (optionally) row"
+  s.summary = "filters csv/tsv files by column name"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
