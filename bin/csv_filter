@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'csv_filter'
+
+file_path = File.expand_path(ARGV.unshift.pop)
+cf = CsvFilter.new(file_path)
+
+puts "available fields are: #{cf.fields}"
+puts "enter field names to filter"
+fields = gets.chomp
+cf.print_filter(fields.split(' '))
