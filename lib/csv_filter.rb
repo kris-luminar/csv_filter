@@ -40,8 +40,8 @@ class CsvFilter
         if filtered_column_positions(columns).include? j
           row[@header[j]] = value
         end
-        output << row
       end
+      output << row
     end
     output
   end
