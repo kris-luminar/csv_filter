@@ -2,6 +2,24 @@
 
 Filters CSV or TSV files (default) by column names.
 
+== CLI Usage
+
+csv_filter comes with a command line utility conveniently called csv_filter. To use it:
+`csv_filter path_to_file`
+
+When prompted, enter the names of the columns (fields) you'd like to limit your results to.
+
+Example:
+
+<pre>
+csv_filter spec/sample.tsv
+available fields are: ["value", "type", "url", "format"]
+enter field names to filter
+type format
+0.    URL	RAW	
+1.    URL	RAW
+</pre>
+
 == Contributing to csv_filter
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
