@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "csv_filter"
-  s.version = "0.3.0"
+  s.version = "0.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kris Luminar"]
-  s.date = "2012-12-11"
+  s.date = "2012-12-12"
   s.description = "Filters CSV or TSV files (default) by column names"
   s.email = "kris.luminar@gmail.com"
   s.executables = ["csv_filter"]
