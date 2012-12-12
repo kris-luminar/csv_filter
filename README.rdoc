@@ -1,4 +1,5 @@
 = csv_filter
+{<img src="https://travis-ci.org/kris-luminar/csv_filter.png" />}[https://travis-ci.org/kris-luminar/csv_filter]
 
 Filters CSV or TSV files (default) by column names.
 
@@ -11,14 +12,14 @@ When prompted, enter the names of the columns (fields) you'd like to limit your 
 
 Example:
 
-<pre>
+{<pre>}
 csv_filter spec/sample.tsv
 available fields are: ["value", "type", "url", "format"]
 enter field names to filter
 type format
 0.    URL	RAW	
 1.    URL	RAW
-</pre>
+{</pre>}
 
 == Contributing to csv_filter
 
